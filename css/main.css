@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    background: #ffffff;
+}
+.card
+{
+    position: relative;
+    width: 30%;
+    height: auto;
+    background: #f0f0f0;
+    box-shadow: 0 50px 40px rgba(0, 0, 0, 0.25);
+    text-align: left;
+    overflow: hidden;
+    padding: 20px;
+    color: #000000;
+    z-index: 2;
+    margin: 10px 0;
+    transition: all 0.5s;
+    border-radius: 5px;
+}
+.card:hover
+{
+    box-shadow: 0 50px 80px rgba(0, 0, 0, 0.25);
+}
+.card .imgBox
+{
+    width: 100%;
+    margin: 60px 0;
+}
+.card .imgBox img
+{
+    width: 100%;
+    transform: rotate(-25deg);
+}
+.card .textBox h1
+{
+    font-size: 2em;
+}
+.card .textBox p
+{
+    font-size: 1.35em;
+}
+@media(max-width: 991px)
+{
+    .card
+    {
+        width: 45%;
+    }
+}
+@media(max-width: 768px)
+{
+    body
+    {
+        flex-direction: column;
+    }
+    .card
+    {
+        width: 90%;
+    }
+    .card .textBox h1
+    {
+        font-size: 1.25em;
+    }
+    .card .textBox p
+    {
+        font-size: 1em;
+    }
+}
