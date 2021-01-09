@@ -26,6 +26,7 @@ body
         flex-wrap: wrap;
     min-height: 100vh;
     background: #ffffff;
+    padding: 10px 0;
 }
 .card
 {
@@ -44,7 +45,7 @@ body
     -webkit-transition: all 0.5s;
     -o-transition: all 0.5s;
     transition: all 0.5s;
-    z-index: 50;
+    z-index: 0;
 }
 .card:hover
 {
@@ -60,6 +61,7 @@ body
 .card .imgBox img
 {
     width: 100%;
+    height: auto;
     -webkit-transform: rotate(-25deg);
         -ms-transform: rotate(-25deg);
             transform: rotate(-25deg);
@@ -90,8 +92,16 @@ body::-webkit-scrollbar-thumb {
     {
         width: 45%;
     }
+    .card .textBox h1
+    {
+        font-size: 1.45em;
+    }
+    .card .textBox p
+    {
+        font-size: 1.25em;
+    }
 }
-@media(max-width: 768px)
+@media(max-width: 600px)
 {
     body
     {
